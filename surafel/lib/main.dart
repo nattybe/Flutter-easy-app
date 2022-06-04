@@ -60,6 +60,20 @@ class HomeState extends State<Home> {
             ),
           ]),
         ),
+        Expanded(
+            child: Padding(
+          padding: EdgeInsets.all(20.0),
+          child: ListView(
+            children: const <Widget>[
+              ListTile(
+                // ignore: deprecated_member_use
+                leading: FaIcon(FontAwesomeIcons.thermometerHalf),
+                title: Text("Temprature"),
+                trailing: Text("52\u00B0"),
+              ),
+            ],
+          ),
+        ))
       ],
     ));
   }
