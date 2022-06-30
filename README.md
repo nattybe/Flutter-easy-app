@@ -1,1 +1,1 @@
-# Flutter-easy-app
+# Flutter-easy-weather-app
