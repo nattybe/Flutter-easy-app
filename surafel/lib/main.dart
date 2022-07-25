@@ -31,9 +31,8 @@ class _HomeState extends State<Home> {
 
   Future getWheather() async {
     // ignore: unused_local_variable
-    http.Response response = await http.get(
-        "https://api.openweathermap.org/data/2.5/weather?q=Addis%20Ababa&appid=52321e912f45bad5824de290bd1a0647");
-    var results = jsonDecode(response.body);
+    http.Response response = await http.get(Uri.parse('https://api.openweathermap.org/data/2.5/weather?q=Addis%20Ababa&appid=52321e912f45bad5824de290bd1a0647'
+));    var results = jsonDecode(response.body);
     setState(() {
       this.temp = results['main']['temp'];
       this.discription = results['wheather'][0][' discription'];
